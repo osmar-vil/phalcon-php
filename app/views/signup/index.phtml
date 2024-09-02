@@ -1,0 +1,19 @@
+<h2>Sign up using this form</h2>
+
+<?= $this->tag->form(["signup/register"]); ?>
+
+    <p>
+        <label for="name">Name</label>
+        <?= $this->tag->inputText("name"); ?>
+    </p>
+
+    <p>
+        <label for="email">E-Mail</label>
+        <?= $this->tag->inputEmail("email"); ?>
+    </p>
+
+    <p>
+        <?= $this->tag->inputSubmit("Register"); ?>
+    </p>
+
+</form>
